@@ -19,11 +19,13 @@ rocker --env TURTLEBOT3_MODEL=waffle_pi --name turtlebot3_sim --x11 ghcr.io/robi
 ```
 ### Terminal 2
 ```
+docker exec -it turtlebot3_sim bash
 source /opt/ros/foxy/setup.bash
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
 ### Terminal 3
 ```
+docker exec -it turtlebot3_sim bash
 source /opt/ros/foxy/setup.bash
 ros2 run image_view image_view --ros-args --remap image:=/camera/image_raw
 ```
