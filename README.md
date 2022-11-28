@@ -15,7 +15,7 @@
 
 ### Terminal 1
 ```
-rocker --env TURTLEBOT3_MODEL=waffle_pi --name turtlebot3_sim --x11 ghcr.io/robinlabuji/turtlebot3_simulations:foxy-devel
+rocker --env TURTLEBOT3_MODEL=waffle_pi --name turtlebot3_sim --x11 ghcr.io/roboticrepositories/turtlebot3_simulations:foxy-devel
 ```
 ### Terminal 2
 ```
