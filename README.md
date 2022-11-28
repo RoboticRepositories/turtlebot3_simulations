@@ -11,6 +11,23 @@
 
 [![foxy-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/workflows/foxy-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3_simulations/tree/foxy-devel)
 
+## Run with rocker
+
+### Terminal 1
+```
+rocker --env TURTLEBOT3_MODEL=waffle_pi --name turtlebot3_sim --x11 ghcr.io/robinlabuji/turtlebot3_simulations:foxy-devel
+```
+### Terminal 2
+```
+source /opt/ros/foxy/setup.bash
+ros2 run turtlebot3_teleop teleop_keyboard
+```
+### Terminal 3
+```
+source /opt/ros/foxy/setup.bash
+ros2 run image_view image_view --ros-args --remap image:=/camera/image_raw
+```
+
 ## ROBOTIS e-Manual for TurtleBot3
 - [ROBOTIS e-Manual for TurtleBot3](http://turtlebot3.robotis.com/)
 
